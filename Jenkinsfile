@@ -40,7 +40,7 @@ stage(" Docker Build ") {
         steps {
             script {
                echo '<--------------- Docker Publish Started --------------->'  
-                docker.withRegistry(registry, 'nodejs_jfrog'){
+                docker.withRegistry(registry, 'Jfrog_token'){
                     app.push()
                 }    
                echo '<--------------- Docker Publish Ended --------------->'  
